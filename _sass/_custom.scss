@@ -1,0 +1,300 @@
+/*A METTRE EN CDN*/
+
+.hero-offer {@include cover-background ('//assetstdnext.s3.amazonaws.com/img/bg-hero-camera.jpg');}
+
+.home-news {
+  padding:0.781em 0 0.781em 0;
+  .home-news-link {
+    margin:0;
+    @include font-size(32px);
+    color:#ffffff;
+    font-weight:200;
+  }
+}
+/*------FIN CDN */
+
+
+.camera-drawing {
+  padding:3% 0 3% 0;
+  @include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-camera-bynight.jpg'); background-position:center top;
+}
+
+.process {
+  padding:0;
+  .process-tile {
+    display:table;
+    width:100%;
+
+    &:hover {
+      cursor:pointer;
+
+      -webkit-transition: background-position 0.7s ease-in-out;
+      -moz-transition: background-position 0.7s ease-in-out;
+      -ms-transition: background-position 0.7s ease-in-out;
+      -o-transition: background-position 0.7s ease-in-out;
+      transition: background-position 0.7s ease-in-out;
+    }
+
+    .process-tile-inner {
+      display:table-cell;
+      vertical-align:middle;
+      width:100%;
+      height:100%;
+
+      opacity:0;
+
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        opacity:1;
+      }
+
+      .process-tile-title {
+        padding:0 1em 0 1em;
+        text-align:center;
+        @include font-size(48px);
+        color:#ffffff;
+        font-weight:300;
+
+      }
+    }
+  }
+
+  .holder-assembly {
+    background-image:url('//assetstdnext.s3.amazonaws.com/img/cam_holder_assembly.jpg');
+    background-repeat:no-repeat;
+    width:100%;
+    height:92.250em;
+
+    &:hover {
+      background-position:0 -92.250em;
+    }
+  }
+
+
+  .focus-tuning {
+    background-image:url('//assetstdnext.s3.amazonaws.com/img/cam_focus_tuning.jpg');
+    background-repeat:no-repeat;
+    height:46.125em;
+
+    &:hover {
+      background-position:0 -46.125em;
+    }
+  }
+
+  .re-tested {
+    background-image:url('//assetstdnext.s3.amazonaws.com/img/cam_test.jpg');
+    background-repeat:no-repeat;
+    height:46.125em;
+
+    &:hover {
+      background-position:0 -46.125em;
+    }
+  }
+
+  .uv-curing {
+    background-image:url('//assetstdnext.s3.amazonaws.com/img/cam_uv_curing.jpg');
+    background-repeat:no-repeat;
+    height:46.125em;
+
+    &:hover {
+      background-position:0 -46.125em;
+    }
+  }
+}
+
+
+.cam-name {
+  margin:25px 0 25px 0;
+  display:inline-block;
+  border:1px solid #dddddd;
+  border-radius:50px;
+  @include font-size(18px);
+  font-weight:500;
+  .cam-name-left {
+    display:inline-block;
+    padding:0 12px 0 12px;
+  }
+
+  .cam-name-right {
+    display:inline-block;
+    color:#ffffff;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding:0 12px 0 12px;
+  }
+}
+
+
+.range{
+  padding-bottom:0;
+}
+.range-row{
+  margin:0;
+
+
+}
+.range-head {
+  height:98px;
+}
+
+.range-ref {
+  padding:50px 0 50px 0;
+  border-right: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  background-color:#ffffff;
+}
+
+.last-range-ref {
+  border-right:0;
+}
+
+
+.socket {
+  max-width:104px;
+  width:100%;
+}
+
+.flex {
+  max-width:184px;
+  width:100%;
+}
+
+
+
+.evk-drawing {
+  padding:18% 0 2% 0;
+  @include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-drone-evk.jpg'); background-position:center top;
+}
+
+
+.evk-learning-curve {
+  padding-bottom:0;
+  .evk-learning-curve-text {
+    margin:1.923em 0;
+    @include font-size(26px);
+  }
+}
+
+.evk-included {
+  .evk-included-tools {
+    .evk-tool-inner {
+      vertical-align:top;
+      padding:3.125em 0.962em 0 0.962em ;
+      width:49%;
+      .evk-tool-icon {width:100px;}
+      .evk-tool-description {
+        padding-top:0.962em;
+        @include font-size(22px);
+        color:#ffffff;
+        font-weight:300;
+      }
+    }
+  }
+}
+
+.evk-included {
+  .evk-included-tools {
+    .evk-tool-inner {
+      @media (min-width:768px) {
+        width:19%;
+      }
+    }
+  }
+}
+
+
+#pattern-owl {@include at2x('//assetstdnext.s3.amazonaws.com/img/bg-owl@2x', png);}
+
+
+.idea {
+  padding:19% 0 30% 0;
+  position:relative;
+  border-bottom:0.063em solid #ffffff;
+  .idea-down {
+    position:absolute;
+    top:5%;
+    left:50%;
+    margin-left:-1.500em;
+  }
+  .idea-title {
+    display:inline-block;
+    vertical-align:middle;
+    margin:0;
+    padding:0.172em  0.517em;
+    @include font-size(24px);
+    color:#ffffff;
+    font-weight:300;
+    -moz-border-radius: 3.125em;
+    -webkit-border-radius:3.125em;
+    border-radius: 3.125em;
+    text-transform:uppercase
+  }
+}
+
+@media (min-width:768px) {
+  .idea {
+    .idea-title {
+      display:inline-block;
+      margin:0;
+      padding:0.172em  0.517em;
+      @include font-size(72px);
+      color:#ffffff;
+      font-weight:300;
+      -moz-border-radius: 3.125em;
+      -webkit-border-radius: 3.125em;
+      border-radius: 3.125em;
+    }
+  }
+}
+
+.idea-security-surveillance {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-security-plaform.jpg'); background-position:center top; padding-top:16.5%; padding-bottom:28%;}
+.idea-scanning {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-scanning.jpg'); background-position:center top;padding-top:24%; padding-bottom:20%;}
+.idea-drones {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-robot-drone.jpg'); background-position:center top;padding-top:22.5%; padding-left:7%; padding-bottom:20%;}
+.idea-medical {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-medical.jpg'); background-position:center top;padding-top:23%; padding-bottom:20%;}
+.idea-wearable{@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-wearable.jpg'); background-position:center top;padding-top:22%; padding-bottom:22%;}
+.idea-automotive {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-automative.jpg'); background-position:center top;padding-top:21%; padding-bottom:22%;}
+
+.page-camera-hero {
+  position:relative;
+  margin-top:-10.313em;
+  padding:0% 0 26% 0;
+  z-index:0;
+  .basic-page-title {
+    color:#ffffff;
+    font-weight:400;
+    margin-top:3.745em;
+    .page-title-box {
+      color:#ffffff;
+    }
+  }
+}
+
+
+#td7740 {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-td7740.jpg'); background-position:center center;}
+#td5640 {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-td5640.jpg'); background-position:center center;}
+
+
+
+.technical-features {
+  color:#ffffff;
+  .technical-features-col{
+    .technical-feature-inner {
+      margin-bottom:3.125em;
+      .technical-features-title{
+        @include font-size(35px);
+        font-weight:400;
+      }
+
+      .technical-features-description {
+        @include font-size(25px);
+        font-weight:200;
+        margin-left:1.600em;;
+      }
+    }
+  }
+}

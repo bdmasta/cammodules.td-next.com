@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% include modules-pills.html %}
+
+<section class="page-camera-hero" id="{% if page.id %}{{page.id}}{% endif %}">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="basic-page-title text-center">{{page.h1}}</h1>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+{{ content }}

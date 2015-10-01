@@ -1,0 +1,15 @@
+# Site settings
+title: TTD next•High quality industrial camera modules
+email: contact@td-next.Com
+description: > # this means to ignore newlines until "baseurl:"
+  TD next provides high quality, time-to-market & cost-effective camera modules for industrial imaging applications
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+
+
+host: 0.0.0.0

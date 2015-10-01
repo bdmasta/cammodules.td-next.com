@@ -1,0 +1,14 @@
+
+<nav class="navbar navbar-default navbar-fixed-top menu-base menu-brand-inverted">
+  <div class="container">
+    <div class="navbar-header"> <a class="navbar-toggle collapsed nav-brand-toggle" data-toggle="collapse" data-target="#main-menu-collapse" aria-expanded="false"> <i class="fa fa-bars fa-2x"></i> </a> <a class="navbar-brand logo" href="{{site.url}}/"><img class="img-responsive logo-img" src="//assetstdnext.s3.amazonaws.com/img/tdnext-camera-logo@2x.png" alt="TD next logo"></a> </div>
+    <div class="collapse navbar-collapse" id="main-menu-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li {% if page.url == '/modules/' %} class="active" {% endif %}><a href="{{site.url}}/getting-started/">Getting started</a></li>
+        <li {% if page.url == '/evk/' %} class="active" {% endif %}><a href="{{site.url}}/evk/">EVK</a></li>
+        <li {% if page.url == '/inspiration/' %} class="active" {% endif %}><a href="{{site.url}}/applications/">Applications</a></li>
+        <li><a target="_blank" href="http://community.td-next.com">Community</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
