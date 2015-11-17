@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{% include modules-pills.html %}
-
 <section class="page-camera-hero" id="{% if page.id %}{{page.id}}{% endif %}">
 	<div class="container">
 		<div class="row">
@@ -11,8 +9,17 @@ layout: default
 				<h1 class="basic-page-title text-center">{{page.h1}}</h1>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="col-md-6">
+					<a target=_blank href="{% if page.id %}{{site.url}}/restricted-{{page.id}}-nda/{% endif %}" type="button" class="btn btn-bg-white btn-xxl btn-cam-download light btn-block">
+						<i class="fa fa-test"></i> Get <span class="normal primary-color">module</span> tools
+					</a>
+				</div>
+				<div class="col-md-6">
+					<a target=_blank href="{% if page.id %}{{site.url}}/restricted-{{page.id}}-evk/{% endif %}" type="button" class="btn btn-bg-white btn-xxl btn-cam-download light btn-block"><i class="fa fa-test"></i> Get <span class="normal primary-color">EVK</span> tools</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
-
-
-{{ content }}

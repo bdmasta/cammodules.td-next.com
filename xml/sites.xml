@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<offices>
+  <office class="AT">
+    <country>Austria</country>
+    <city>Vienna</city>
+    <phone>+43 186 642 300</phone>
+    <fax>+43 186 642 350</fax>
+    <email>wien@avnet.eu</email>
+  </office>
+  <office class="BE">
+    <country>Belgium</country>
+    <city>Merelbeke</city>
+    <phone>+32 270 990 00</phone>
+    <fax>+32 270 998 10 </fax>
+    <email>gent@avnet.eu</email>
+  </office>
+  <office class="fr">
+    <country>France</country>
+    <city>Massy</city>
+    <phone>+33 164 472 929</phone>
+    <fax>+33 164 470 084</fax>
+    <email>paris@avnet.eu</email>
+  </office>
+  <office class="fr">
+    <country>France</country>
+    <city>Vénissieux Cedex</city>
+    <phone>+33 478 771 630</phone>
+    <fax>+33 478 771 399</fax>
+    <email>lyon@avnet.eu</email>
+  </office>
+  <office class="fr">
+    <country>France</country>
+    <city>Cesson Sévigné</city>
+    <phone>+33 299 838 485</phone>
+    <fax>+33 299 838 083</fax>
+    <email>rennes@avnet.eu</email>
+  </office>
+  <office class="fr">
+    <country>France</country>
+    <city>Toulouse</city>
+    <phone>+33 562 474 760</phone>
+    <fax>+33 562 474 761</fax>
+    <email>toulouse@avnet.eu</email>
+  </office>
+  <office class="fr">
+    <country>France</country>
+    <city>Illkirch-Graffenstaden</city>
+    <phone>+33 388 396 903</phone>
+    <fax>+33 562 474 761</fax>
+    <email>strasbourg@avnet.eu</email>
+  </office>
+</offices>
+
+<!--
+<sites>
+    <site id="0">
+        <url>http://www.pckult.net</url>
+        <desc>
+        	<title>PC Kult</title>
+            <brief>Résumé</brief>
+            <long>Description longue</long>
+        </desc>
+    </site>
+    <site id="2">
+    	<title>Microsoft</title>
+        <url>http://www.microsoft.ca</url>
+        <desc>
+            <brief>Résumé</brief>
+            <long>Description longue</long>
+        </desc>
+    </site>
+    <site id="3">
+    	<title>Intel</title>
+        <url>http://www.intel.com</url>
+        <desc>
+            <brief>Résumé</brief>
+            <long>Description longue</long>
+        </desc>
+    </site>
+</sites>
+-->

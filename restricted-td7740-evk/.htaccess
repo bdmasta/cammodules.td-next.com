@@ -1,0 +1,7 @@
+AuthUserFile /srv/data/web/vhosts/cammodules.td-next.com/restricted-td7740-evk/.htpasswd
+AuthName "Zone protégée par mot de passe"
+AuthType Basic
+
+<limit GET POST>
+require valid-user
+</limit>
