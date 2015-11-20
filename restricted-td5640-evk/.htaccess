@@ -1,5 +1,5 @@
-AuthUserFile /srv/data/web/vhosts/cammodules.td-next.com/restricted-td5640-evk/.htpasswd
-AuthName "Zone protégée par mot de passe"
+AuthUserFile /srv/data/web/vhosts/cammodules.td-next.com/htdocs/restricted-td5640-evk/.htpasswd
+AuthName "Restricted area. Get identified with your ID and password"
 AuthType Basic
 
 <limit GET POST>
