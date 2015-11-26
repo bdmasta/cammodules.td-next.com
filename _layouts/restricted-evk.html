@@ -21,7 +21,7 @@ layout: default
     </div>
     <div class="row">
       <div class="col-md-12">
-        <a href="{% if page.evk-tools %} {{page.evk-tools}} {% else %} # {% endif %}"><img class="img-responsive center-block" src="https://s3-eu-west-1.amazonaws.com/assetstdnext/img/toolbox.png">
+        <a href="{% if page.evk-tools %} {{page.evk-tools}} {% else %} # {% endif %}"><img class="img-responsive center-block" src="https://s3-eu-west-1.amazonaws.com/assetstdnext/img/toolbox.png"></a>
         </div>
         <!--
         <div class="col-md-4 col-md-offset-1">
@@ -34,6 +34,7 @@ layout: default
 </div>
 </section>
 
+{% if page.video-tuto == 'ok' %}
 <section>
   <div class="container">
     <div class="row">
@@ -45,3 +46,4 @@ layout: default
     </div>
   </div>
 </section>
+{% endif %}
