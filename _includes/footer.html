@@ -82,16 +82,8 @@ ga('send', 'pageview');
 <script src="{{site.url}}/js/jquery.vmap.world.js"></script>
 <script src="{{site.url}}/js/jquery.vmap.sampledata.js"></script>
 <script>
-jQuery('#vmap').vectorMap({
-  map: 'world_en',
-  backgroundColor: null,
-  color: '#545659',
-  hoverOpacity: 0.7,
-  selectedColor: '#e32a48',
-  enableZoom: false,
-  selectedRegions: ['FR', 'CL'],
-  multiSelectRegion: true,
-  onRegionClick: function(element, code, region)
+$(document).ready(
+  function()
   {
     $.ajax( {
       type: "GET",
@@ -102,33 +94,38 @@ jQuery('#vmap').vectorMap({
         $(xml).find('office').each(
           function()
           {
-            var select_code = $(this).attr('class');
+            var code = $(this).attr('class');
             var country = $(this).find('country').text();
             var city = $(this).find('city').text();
             var phone = $(this).find('phone').text();
             var fax = $(this).find('fax').text();
             var email = $(this).find('email').text();
 
-            if (code == select_code){
-              //$('#Div_XML').html("<address>" + country + "</br>" + city + "</br>" + phone + "</br>" + fax + "</br>" + email + "</address>");
+            $(xml).find('fr')(
+              function()
+                      {
 
-              $('<div class="address"></div>').html("<address>" + country + "</br>" + city + "</br>" + phone + "</br>" + fax + "</br>" + email + "</address>").replaceWith('#Div_XML');
+              
 
-              //$('<div class="country"></div>').html(country).appendTo('#Div_XML');
-              //$('<div class="city"></div>').html(city).appendTo('#Div_XML');
-              //$('<div class="phone"></div>').html(phone).appendTo('#Div_XML');
-              //$('<div class="fax"></div>').html(fax).appendTo('#Div_XML');
-              //$('<div class="email"></div>').html(email).appendTo('#Div_XML');
-            }
+
+              });
+            //$('#Div_XML').html(code);
+            //$('<div class="code"></div>').html(code).appendTo('#Div_XML');
+            //if (code == select_code) {
+
+
+            //$('<div class="code"></div>').html(code).appendTo('#Div_XML');
+            //$('<div class="country"></div>').html(country).appendTo('#Div_XML');
+            //$('<div class="city"></div>').html(city).appendTo('#Div_XML');
+            //$('<div class="phone"></div>').html(phone).appendTo('#Div_XML');
+            //$('<div class="fax"></div>').html(fax).appendTo('#Div_XML');
+            //$('<div class="email"></div>').html(email).appendTo('#Div_XML');
+            //}
 
           });
-
-
-
         }
       });
-
-
     }
-  });
+  );
+
   </script>
