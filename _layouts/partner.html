@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="partner-header" {% if page.partner-hero %} style="background-image:url({{ page.partner-hero }})"{% endif %}>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-sm-2" style="padding-right:0;">
+        <div class="partner-logo">
+          <img class="img-responsive img-partner-logo center-block" src="{% if page.partner-logo %}{{page.partner-logo}}{% endif %}">
+        </div>
+      </div>
+      <div class="col-md-10 col-sm-10">
+        <div class="partner-social">
+          <div class="partner-networks">
+            <ul class="list-unstyled list-inline" style="margin-bottom:0;">
+              <li>{% if page.partner-twitter == 'ok' %}<a target="_blank" href="{% if page.partner-twitter-link %}{{page.partner-twitter-link}} {% else %} # {% endif %}"><i class="fa fa-twitter-filled fa-3x"></i></a>{% endif %}</li>
+              <li>{% if page.partner-linkedin == 'ok' %}<a target="_blank" href="{% if page.partner-linkedin-link %}{{page.partner-linkedin-link}} {% else %} # {% endif %}"><i class="fa fa-linkedin-filled fa-3x"></i></a>{% endif %}</li>
+              <li>{% if page.partner-youtube == 'ok' %}<a target="_blank" href="{% if page.partner-youtube-link %}{{page.partner-youtube-link}} {% else %} # {% endif %}"><i class="fa fa-youtube-filled fa-3x"></i></a>{% endif %}</li>
+            </ul>
+          </div>
+          <div class="partner-website">
+            <a target="_blank" href="{% if page.partner-website-link %} http://{{page.partner-website-link}} {% else %} # {% endif %}">{% if page.partner-website-link %}{{page.partner-website-link}} {% else %} Website {% endif %}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="partner-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-2" style="padding-left:0;">
+        <h1 class="partner-name primary-color extra-light">{% if page.partner-name %}{{page.partner-name}}{% endif %}</h1>
+        <div class="partner-description">
+          <p>{% if page.partner-description %}{{page.partner-description}}{% endif %}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{content}}

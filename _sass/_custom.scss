@@ -428,3 +428,193 @@
     }
   }
 }
+
+
+
+.partner-header {
+  background-position:center bottom;
+  .partner-logo {
+    padding:18px 12px;
+    border-radius:25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    background-color:#ffffff;
+    .img-partner-logo{
+      max-width:188px;
+      width:100%;
+    }
+  }
+}
+
+.partner-content {
+  .partner-name {
+    @include font-size(72px);
+    text-transform:uppercase;
+    margin:0.694em 0 0 0;
+  }
+  .partner-description {
+    @include font-size(24px);
+    margin:2.083em 0 2.083em 0;
+    text-align:justify;
+  }
+}
+
+.partner-social {
+  padding:10px 0 10px 0;
+  a {color:#ffffff;}
+  .partner-networks {
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .partner-website {
+    display:inline-block;
+    vertical-align:middle;
+    padding: 0.227em 0.682em;
+    margin-left: 1.136em;
+
+    @include font-size(22px);
+    border:2px solid #ffffff;
+    border-radius:2.273em;
+    -moz-border-radius: 2.273em;
+    -webkit-border-radius: 2.273em;
+    font-weight:500;
+  }
+}
+
+
+@media (min-width:768px) {
+  .partner-header {
+    margin-top:-5.313em;
+    padding-top:16%;
+    .partner-logo {
+      margin-bottom:-44px;
+    }
+  }
+
+  .partner-social {
+    margin-top:20px;
+
+  }
+}
+
+.nda-decoration {
+  .nda-decoration-tile {
+    display:table;
+    width:100%;
+    height:445px;
+    .nda-decoration-tile-inner{
+      display:table-cell;
+      vertical-align: middle;
+
+      .getintouch {
+        @include font-size(65px);
+        color:#ffffff;
+      }
+
+      .quotation {
+        @include font-size(36px);
+        color:#ffffff;
+      }
+    }
+  }
+
+  .bg-nda {
+    margin-top:7px;
+    @include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-nda.jpg');
+    background-position: left center;
+  }
+}
+
+.nda-contact{
+  .wizard {
+    .steps {
+      ul {
+        li {
+          a, a:hover, a:active, a:focus {
+            border-top-left-radius: 18px;
+            -moz-border-top-left-radius: 18px;
+            -webkit-border-top-left-radius:18px;
+            border-top-right-radius: 18px;
+            -moz-border-top-right-radius: 18px;
+            -webkit-border-top-right-radius: 18px;
+
+            border-bottom-left-radius: 0;
+            -moz-border-bottom-left-radius: 0;
+            -webkit-border-bottom-left-radius:0;
+            border-bottom-right-radius: 0;
+            -moz-border-bottom-right-radius: 0;
+            -webkit-border-bottom-right-radius: 0;
+          }
+        }
+      }
+      .disabled {
+        a, a:hover, a:active, a:focus {
+          background-color:#cecece;
+          color:#ffffff;
+        }
+      }
+      .current {
+        a, a:hover, a:active, a:focus {
+          background-color:#ffffff;
+          color:#8d8d8d;
+          .number {
+            color:#e32c4a;
+          }
+        }
+      }
+
+      .done {
+        a, a:hover, a:active, a:focus {
+          background-color:#ffffff;
+          color:#8d8d8d;
+          opacity:0.9;
+        }
+      }
+
+    }
+
+
+    .content{
+      margin:0;
+      border-radius:0;
+      background-color:#ffffff;
+      min-height:29.125em;
+
+      .body {
+        position:inherit;
+        width:100%;
+        height:100%;
+        padding:0;
+
+      }
+    }
+    .actions {
+      background-color:#e32c4a;
+    }
+  }
+}
+
+@media (min-width:768px) {
+  .nda-contact{
+    margin-top:-65px;
+    .wizard {
+      .steps {
+        ul {
+          li {
+            width:25%;
+            a, a:hover, a:active, a:focus {
+              @include font-size(28px);
+              padding:4px 20px;
+              margin:0 5px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#testbg {
+  @include cover-background('//assetstdnext.s3.amazonaws.com/img/map-nda.png');
+  height:505px;
+}
