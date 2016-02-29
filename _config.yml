@@ -1,5 +1,5 @@
 # Site settings
-title: TTD next•High quality industrial camera modules
+title: TD next•High quality industrial camera modules
 email: contact@td-next.Com
 description: > # this means to ignore newlines until "baseurl:"
   TD next provides high quality, time-to-market & cost-effective camera modules for industrial imaging applications
@@ -13,5 +13,6 @@ markdown: kramdown
 
 
 host: 0.0.0.0
+
 
 include: [".htaccess", ".htpasswd"]

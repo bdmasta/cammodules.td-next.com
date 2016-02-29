@@ -1,5 +1,3 @@
-/*A METTRE EN CDN*/
-
 .hero-offer {@include cover-background ('//assetstdnext.s3.amazonaws.com/img/bg-hero-camera.jpg');}
 
 .home-news {
@@ -11,8 +9,6 @@
     font-weight:200;
   }
 }
-/*------FIN CDN */
-
 
 .camera-drawing {
   padding:3% 0 3% 0;
@@ -21,7 +17,6 @@
 
 .process {
   padding:0;
-
   .process-tile {
     position:relative;
 
@@ -30,7 +25,6 @@
       .process-tile-overlay {opacity:0.5;}
       .process-tile-inner {opacity:1;}
     }
-
     .process-tile-overlay {
       position:absolute;
       top:0;
@@ -46,7 +40,6 @@
       -ms-transition: all 0.4s ease-in-out;
       -o-transition: all 0.4s ease-in-out;
       transition: all 0.4s ease-in-out;
-
     }
 
     .process-tile-inner {
@@ -67,7 +60,6 @@
         color:#ffffff;
         font-weight:300;
         z-index:999;
-
       }
     }
   }
@@ -80,7 +72,6 @@
 
     &:hover {background-position: 0 -92.250em;}
   }
-
 
   .focus-tuning {
     background-image:url('//assetstdnext.s3.amazonaws.com/img/cam_focus_tuning.jpg');
@@ -130,17 +121,10 @@
 }
 
 
-.range{
-  padding:0;
-}
-.range-row{
-  margin:0;
+.range{padding:0;}
+.range-row{margin:0;}
 
-
-}
-.range-head {
-  height:98px;
-}
+.range-head {height:98px;}
 
 .range-ref {
   padding:50px 0 50px 0;
@@ -148,8 +132,6 @@
   border-bottom: 1px solid #e4e4e4;
   background-color:#ffffff;
 }
-
-
 
 .socket {
   max-width:104px;
@@ -181,36 +163,84 @@
   }
 }
 
-.evk-included {
-  .evk-included-tools {
-    .evk-tool-inner {
-      vertical-align:top;
-      padding:3.125em 0.962em 0 0.962em ;
-      width:49%;
-      .evk-tool-icon {width:100px;}
-      .evk-tool-description {
-        padding-top:0.962em;
-        @include font-size(22px);
-        color:#ffffff;
-        font-weight:300;
+
+.evk-pack {
+  .evk-pack-left {
+    height:1057px;
+    @include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-evkpack-out.jpg');
+  }
+  .evk-pack-right {
+    .evk-pack-content-heading {
+      padding:1.500em 0 1.500em 0;
+    }
+    .evk-content-tile {
+      display:table;
+
+      .evk-content-inner {
+        display:table-cell;
+        vertical-align:top;
+
+        .evk-component {
+          display:inline-block;
+          width:auto;
+          margin: 24px 0 40px 0;
+          -moz-border-radius: 3.125em;
+          -webkit-border-radius: 3.125em;
+          border-radius: 3.125em;
+          background-color:#ffffff;
+
+          .evk-component-left{
+            display:inline-block;
+            padding: 0.250em 0.500em;
+            -moz-border-radius: 3.125em;
+            -webkit-border-radius: 3.125em;
+            border-radius: 3.125em;
+            background-color:#ffffff;
+            font-weight:500;
+
+          }
+          .evk-component-right {
+            display:inline-block;
+            padding: 0.250em 0.500em;
+            -moz-border-top-right-radius: 1.923em;
+            -webkit-border-top-right-radius:1.923em;
+            border-top-right-radius: 1.923em;
+            -moz-border-bottom-right-radius: 1.923em;
+            -webkit-border-bottom-right-radius:1.923em;
+            border-bottom-right-radius: 1.923em;
+            background-color:#9b9b9b;
+            color:#ffffff;
+          }
+        }
       }
+    }
+    .bg-grey-horizontal-small {
+      height:206px;
+      @include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-grey326x206.jpg');
+      background-repeat: no-repeat;
+    }
+
+    .bg-grey-vertical-small {
+      height:412px;
+      @include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-grey426x413.jpg');
+      background-repeat: no-repeat;
+    }
+
+    .bg-grey-vertical-big {
+      height:528px;
+      @include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-grey490x528.jpg');
+      background-repeat: no-repeat;
     }
   }
 }
 
-.evk-included {
-  .evk-included-tools {
-    .evk-tool-inner {
-      @media (min-width:768px) {
-        width:19%;
-      }
-    }
-  }
+#rotate-td5640_h{
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
 }
-
 
 #pattern-owl {@include at2x('//assetstdnext.s3.amazonaws.com/img/bg-owl', png, 1920px, 175px);}
-
 
 .idea {
   padding:19% 0 30% 0;
@@ -310,7 +340,6 @@
 
   .evb-choice {
     display:block;
-
     padding: 7.500em 0;
 
     &:hover {
@@ -369,15 +398,8 @@
       transform: scale(1.1, 1.1)
     }
   }
-  .evb-choice-left {
-    @include cover-background('//assetstdnext.s3.amazonaws.com/img/td7740-choice-left.jpg');
-
-  }
-
-  .evb-choice-right {
-    @include cover-background('//assetstdnext.s3.amazonaws.com/img/td5640-choice-right.jpg');
-
-  }
+  .evb-choice-left {@include cover-background('//assetstdnext.s3.amazonaws.com/img/td7740-choice-left.jpg');}
+  .evb-choice-right {@include cover-background('//assetstdnext.s3.amazonaws.com/img/td5640-choice-right.jpg');}
 
   .evb-choice-inner {
     display:table;
@@ -398,38 +420,26 @@
       margin:auto;
       @include font-size(50px);
       color:#ffffff;
-
     }
   }
 }
 
 .module-toolbox {
-  .module-toolbox-btn {
-    margin:0px;
-  }
-
-  .btn-toolbox {
-    margin:0.48em 0;
-  }
+  .module-toolbox-btn {margin:0px;}
+  .btn-toolbox {margin:0.48em 0;}
 }
 
 @media (min-width:992px){
   .module-toolbox {
-    .module-toolbox-btn {
-      margin-top:6.25em;
-    }
+    .module-toolbox-btn {margin-top:6.25em;}
   }
 }
 
 @media (min-width:1200px){
   .module-toolbox {
-    .module-toolbox-btn {
-      margin-top:9em;
-    }
+    .module-toolbox-btn {margin-top:9em;}
   }
 }
-
-
 
 .partner-header {
   background-position:center bottom;
@@ -493,22 +503,23 @@
 
   .partner-social {
     margin-top:20px;
-
   }
 }
 
 .nda-decoration {
   .nda-decoration-tile {
     display:table;
-    width:100%;
     height:445px;
+    width:100%;
     .nda-decoration-tile-inner{
       display:table-cell;
-      vertical-align: middle;
-
+      vertical-align:middle;
+      h2 {margin:0;}
       .getintouch {
         @include font-size(65px);
         color:#ffffff;
+        padding-left:40px;
+        padding-right: 40px;
       }
 
       .quotation {
@@ -519,102 +530,219 @@
   }
 
   .bg-nda {
-    margin-top:7px;
     @include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-nda.jpg');
     background-position: left center;
+    height:27.813em;
   }
 }
 
-.nda-contact{
-  .wizard {
-    .steps {
-      ul {
-        li {
-          a, a:hover, a:active, a:focus {
-            border-top-left-radius: 18px;
-            -moz-border-top-left-radius: 18px;
-            -webkit-border-top-left-radius:18px;
-            border-top-right-radius: 18px;
-            -moz-border-top-right-radius: 18px;
-            -webkit-border-top-right-radius: 18px;
-
-            border-bottom-left-radius: 0;
-            -moz-border-bottom-left-radius: 0;
-            -webkit-border-bottom-left-radius:0;
-            border-bottom-right-radius: 0;
-            -moz-border-bottom-right-radius: 0;
-            -webkit-border-bottom-right-radius: 0;
-          }
-        }
+@media (min-width:992px) {
+  .nda-decoration {
+    .nda-decoration-tile {
+      .nda-decoration-tile-inner{
+        h2 {margin-top:-85px;}
       }
-      .disabled {
-        a, a:hover, a:active, a:focus {
-          background-color:#cecece;
-          color:#ffffff;
-        }
-      }
-      .current {
-        a, a:hover, a:active, a:focus {
-          background-color:#ffffff;
-          color:#8d8d8d;
-          .number {
-            color:#e32c4a;
-          }
-        }
-      }
-
-      .done {
-        a, a:hover, a:active, a:focus {
-          background-color:#ffffff;
-          color:#8d8d8d;
-          opacity:0.9;
-        }
-      }
-
-    }
-
-
-    .content{
-      margin:0;
-      border-radius:0;
-      background-color:#ffffff;
-      min-height:29.125em;
-
-      .body {
-        position:inherit;
-        width:100%;
-        height:100%;
-        padding:0;
-
-      }
-    }
-    .actions {
-      background-color:#e32c4a;
     }
   }
 }
+
+
+.tdnext-form {
+  .form-group {
+    input, select {
+      -moz-border-radius: 3.125em;
+      -webkit-border-radius: 3.125em;
+      border-radius: 3.125em;
+    }
+    textarea {
+      -moz-border-radius: 1.563em;
+      -webkit-border-radius: 1.563em;
+      border-radius: 1.563em;
+    }
+  }
+}
+
+#wizard {margin-top:0em;}
+
+.wizard {
+  .nav-pills {
+    li{
+      a{
+        background-color:#cecece;
+        color:#ffffff;
+        -moz-border-radius: 3.125em;
+        -webkit-border-radius:3.125em;
+        border-radius:3.125em;
+      }
+    }
+
+    li.active {
+      a {
+        background-color:#ffffff;
+        color:#e32a48;
+        border:1px solid #cecece;
+      }
+    }
+  }
+  .wizard-subtitle {
+    margin-top:1.389em;
+    margin-bottom:1.389em;
+    @include font-size(18px);
+    color:#e32a48;
+    font-weight:400;
+  }
+
+  .wizard-pager{
+    background-color:#cecece;
+  }
+}
+
 
 @media (min-width:768px) {
-  .nda-contact{
-    margin-top:-65px;
-    .wizard {
-      .steps {
-        ul {
-          li {
-            width:25%;
-            a, a:hover, a:active, a:focus {
-              @include font-size(28px);
-              padding:4px 20px;
-              margin:0 5px 0 0;
-            }
+  .wizard {
+    .nav-pills {
+      li{
+        padding-right:0.313em;
+        &:last-child{
+          padding-right:0;
+        }
+        a{
+          @include font-size(18px);
+          padding-top:0px;
+          padding-bottom:0px;
+          //padding-top:1.071em;
+          //padding-bottom:1.071em;
+          -moz-border-top-right-radius: 1em;
+          -webkit-border-top-right-radius:1em;
+          border-top-right-radius: 1em;
+          -moz-border-top-left-radius: 1em;
+          -webkit-border-top-left-radius:1em;
+          border-top-left-radius: 1em;
+
+          -moz-border-bottom-right-radius: 0em;
+          -webkit-border-bottom-right-radius:0em;
+          border-bottom-right-radius: 0em;
+          -moz-border-bottom-left-radius: 0em;
+          -webkit-border-bottom-left-radius:0em;
+          border-bottom-left-radius: 0em;
+        }
+
+        .step {
+          display:block;
+          &:before {
+            content:'';
+            display: inline-block;
+            vertical-align:middle;
+            margin-top:10px;
+            margin-bottom:10px;
+            margin-right:10px;
+            background-size:30px 30px;
+            background-repeat:no-repeat;
+            width:30px;
+            height:30px;
+          }
+        }
+
+        #step1{
+          &:before {
+            content:'';
+            background-image:url('//assetstdnext.s3.amazonaws.com/img/1_grey@2x.png');
+          }
+        }
+
+        #step2{
+          &:before {
+            content:'';
+            background-image:url('//assetstdnext.s3.amazonaws.com/img/2_grey@2x.png');
+          }
+        }
+
+        #step3{
+          &:before {
+            content:'';
+            background-image:url('//assetstdnext.s3.amazonaws.com/img/3_grey@2x.png');
+          }
+        }
+
+        #step4{
+          &:before {
+            content:'';
+            background-image:url('//assetstdnext.s3.amazonaws.com/img/4_grey@2x.png');
+          }
+        }
+      }
+
+      li.active {
+        a {
+          background-color:#ffffff;
+          color:#5a595b;
+          border:0px;
+        }
+
+        #step1{
+          &:before {
+            content:'';
+            background-image:url('//assetstdnext.s3.amazonaws.com/img/1@2x.png');
+          }
+        }
+        #step2{
+          &:before {
+            content:'';
+            background-image:url('//assetstdnext.s3.amazonaws.com/img/2@2x.png');
+          }
+        }
+        #step3{
+          &:before {
+            content:'';
+            background-image:url('//assetstdnext.s3.amazonaws.com/img/3@2x.png');
+          }
+        }
+        #step4{
+          &:before {
+            content:'';
+            background-image:url('//assetstdnext.s3.amazonaws.com/img/4@2x.png');
           }
         }
       }
     }
+    .wizard-subtitle {
+      @include font-size(24px);
+    }
   }
 }
 
-#testbg {
-  @include cover-background('//assetstdnext.s3.amazonaws.com/img/map-nda.png');
-  height:505px;
+@media (min-width:992px) {
+  #wizard {
+    margin-top:-4.250em;
+  }
+  .wizard {
+    .nav-pills {
+      li{
+        a{
+          @include font-size(28px);
+        }
+        .step {
+          display:block;
+          &:before {
+            content:'';
+            display: inline-block;
+            vertical-align:middle;
+            margin-top:10px;
+            margin-bottom:10px;
+            background-size:48px 48px;
+            background-repeat:no-repeat;
+            width:48px;
+            height:48px;
+          }
+        }
+      }
+    }
+    .wizard-subtitle {
+      @include font-size(36px);
+    }
+  }
+}
+
+.row-wide {
+  margin:0;
 }
