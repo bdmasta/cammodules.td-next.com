@@ -4,7 +4,7 @@ $(document).ready(function(){
 
    // chargement des régions
    $.ajax({
-       url: '././php/get_countries.php',
+       url: '../php/get_countries.php',
        data: 'go', // on envoie $_GET['go']
        dataType: 'json', // on veut un retour JSON
        success: function(json) {
@@ -30,7 +30,7 @@ $(document).ready(function(){
     message = $("#message").val();
 
     $.ajax({
-      url: "././php/send_email.php",
+      url: "../php/send_email.php",
       type: "POST",
       data: {
         routing:routing,
@@ -53,7 +53,7 @@ $(document).ready(function(){
           $('#success > .alert-tdnext-success')
           .append('</div>');
 
-          $('#contact')[0].reset();
+          $('#commentForm')[0].reset();
         }
         else {
           $('#success').html("<div class='alert alert-tdnext alert-tdnext-danger'>");
@@ -71,7 +71,7 @@ $(document).ready(function(){
         $('#success > .alert-tdnext-danger').append("Sorry, it seems that the mail server is not responding. Please try again later!");
         $('#success > .alert-tdnext-danger').append('</div>');
 
-        $('#contact')[0].reset();
+        $('#commentForm')[0].reset();
       },
     })
   });

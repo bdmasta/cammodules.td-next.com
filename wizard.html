@@ -1,5 +1,10 @@
 ---
 layout: default
+title: TD next•Get in touch
+excerpt: Choose from a wide family of VGA and 5Mp camera modules scaled to your needs
+name: get-in-touch
+permalink: /get-in-touch/
+h1: Choose from a family of <span class="page-title-box">VGA</span> and <span class="page-title-box">5Mp</span> camera modules
 ---
 
 
@@ -124,3 +129,51 @@ layout: default
     </div>
   </div>
 </div>
+
+<script>
+$(document).ready(function() {
+  var $validator = $("#commentForm").validate({
+    rules: {
+      emailfield: {
+        required: true,
+        email: true,
+        minlength: 3
+      },
+      namefield: {
+        required: true,
+        minlength: 3
+      },
+      urlfield: {
+        required: true,
+        minlength: 3,
+        url: true
+      }
+    }
+  });
+
+  $('#rootwizard').bootstrapWizard({
+    'tabClass': 'nav nav-pills nav-justified',
+    'onTabClick': function(tab, navigation, index) {
+      var $valid = $("#commentForm").valid();
+      if(!$valid) {
+        $validator.focusInvalid();
+        return false;
+      }
+
+      $('#welcome').html('Hello, ' + $('#firstname').val());
+    },
+    'onNext': function(tab, navigation, index) {
+      var $valid = $("#commentForm").valid();
+      if(!$valid) {
+        $validator.focusInvalid();
+        return false;
+      }
+      $('#welcome').html('Hello, ' + $('#firstname').val());
+    }
+
+  });
+  window.prettyPrint && prettyPrint()
+});
+</script>
+
+<script src="{{site.url}}/js/ajax.js"></script>
