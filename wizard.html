@@ -1,7 +1,7 @@
 ---
 layout: default
-title: TD next•Get in touch
-excerpt: Choose from a wide family of VGA and 5Mp camera modules scaled to your needs
+title: TD next•Get in touch to sign an NDA
+excerpt: Getting in touch with your local office contact
 name: get-in-touch
 permalink: /get-in-touch/
 h1: Choose from a family of <span class="page-title-box">VGA</span> and <span class="page-title-box">5Mp</span> camera modules
@@ -22,7 +22,7 @@ h1: Choose from a family of <span class="page-title-box">VGA</span> and <span cl
         <div class="col-md-6 col-md-offset-6">
           <div class="nda-decoration-tile ">
             <div class="nda-decoration-tile-inner text-center">
-              <h2 class="extra-light quotation">You want a quotation, signing an NDA or getting more informations about our modules?</h2>
+              <h2 class="extra-light quotation">Want a quote, signing an NDA or getting more informations about our modules?</h2>
             </div>
           </div>
         </div>
@@ -48,9 +48,9 @@ h1: Choose from a family of <span class="page-title-box">VGA</span> and <span cl
             <div class="tab-content">
               <div class="tab-pane row row-wide" id="tab1">
                 <div class="col-md-4">
-                  <h3 class="wizard-subtitle">Which country are you based in? It will be useful to identify your local office contact.</h3>
+                  <h3 class="wizard-subtitle">Which country are you based in? It will be useful to identify your Avnet Memec | Silica local office contact.</h3>
                   <div class="form-group form-group-lg">
-                    <select class="form-control" name="routing" id="routing">
+                    <select class="form-control required" name="routing" id="routing">
                       <option value="">-- Your country --</option>
                     </select>
                   </div>
@@ -63,19 +63,19 @@ h1: Choose from a family of <span class="page-title-box">VGA</span> and <span cl
                 <div class="col-md-4">
                   <h3 class="wizard-subtitle">Can you tell us a little bit about yourself?</h3>
                   <div class="form-group form-group-lg">
-                    <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Firstname">
+                    <input type="text" class="form-control required" name="firstname" id="firstname" placeholder="Firstname">
                   </div>
                   <div class="form-group form-group-lg">
-                    <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                    <input type="text" class="form-control required" name="name" id="name" placeholder="Name">
                   </div>
                   <div class="form-group form-group-lg">
-                    <input type="email" class="form-control email" name="email" id="email" placeholder="Email">
+                    <input type="email" class="form-control required email" name="email" id="email" placeholder="Email">
                   </div>
                   <div class="form-group form-group-lg">
                     <input type="input" class="form-control" name="address" id="address">
                   </div>
                   <div class="form-group form-group-lg">
-                    <input type="text" class="form-control" name="company" id="company" placeholder="Company">
+                    <input type="text" class="form-control required" name="company" id="company" placeholder="Company">
                   </div>
                 </div>
                 <div class="col-md-8 wide">
@@ -84,13 +84,13 @@ h1: Choose from a family of <span class="page-title-box">VGA</span> and <span cl
               </div>
               <div class="tab-pane row row-wide" id="tab3">
                 <div class="form-group form-group-lg col-md-4">
-                  <h3 class="wizard-subtitle">Hi<span id="welcome"></span>can you select the purpose of your request?</h3>
-                  <select  class="form-control" name="topic" id="topic">
+                  <h3 class="wizard-subtitle"><span id="welcome"></span>can you select a purpose for your request?</h3>
+                  <select  class="form-control" name="topic required" id="topic">
                     <option value="">-- Topic --</option>
-                    <option value="nda_evk">Signing an NDA for getting an Evalution Board</option>
-                    <option value="nda_datasheet">Signing an NDA for downloading a module datasheet</option>
-                    <option value="vga_modules">Having more informations about our VGA modules</option>
-                    <option value="5Mp_modules">Having more informations about our5Mp modules</option>
+                    <option value="NDA EVK">Signing an NDA for getting an Evalution Board</option>
+                    <option value="NDA datasheet">Signing an NDA for downloading a module datasheet</option>
+                    <option value="VGA modules">Having more informations about our VGA modules</option>
+                    <option value="5Mp modules">Having more informations about our5Mp modules</option>
                     <option value="Other request">Other request</option>
                   </select>
                 </div>
@@ -102,7 +102,7 @@ h1: Choose from a family of <span class="page-title-box">VGA</span> and <span cl
                 <div class="col-md-4">
                   <h3 class="wizard-subtitle">It's nearly finished! Can you tell us a little bit about your project?</h3>
                   <div class="form-group form-group-lg">
-                    <textarea class="form-control" name="message" id="message" rows="10" placeholder="Your message"></textarea>
+                    <textarea class="form-control required" name="message" id="message" rows="10" placeholder="Your message"></textarea>
                   </div>
                   <div class="form-group form-group-lg">
                     <button type="submit" class="btn btn-l btn-brand uppercase"><i class="fa fa-send-o"></i> Send your request</button>
@@ -112,6 +112,7 @@ h1: Choose from a family of <span class="page-title-box">VGA</span> and <span cl
                   <img class="img-responsive pull-right" src="https://s3-eu-west-1.amazonaws.com/assetstdnext/img/nda-send.png">
                 </div>
               </div>
+              <!--
               <div class="row row-wide wizard-pager">
                 <div class="col-md-12">
                   <ul class="pager wizard">
@@ -122,6 +123,7 @@ h1: Choose from a family of <span class="page-title-box">VGA</span> and <span cl
                   </ul>
                 </div>
               </div>
+            -->
             </div>
           </div>
         </form>
@@ -134,19 +136,26 @@ h1: Choose from a family of <span class="page-title-box">VGA</span> and <span cl
 $(document).ready(function() {
   var $validator = $("#commentForm").validate({
     rules: {
-      emailfield: {
+      email: {
         required: true,
         email: true,
         minlength: 3
       },
-      namefield: {
+      firstname: {
         required: true,
-        minlength: 3
+        minlength: 2
       },
-      urlfield: {
+      name: {
         required: true,
-        minlength: 3,
-        url: true
+        minlength: 2
+      },
+      company: {
+        required: true,
+        minlength: 2
+      },
+      message: {
+        required: true,
+        minlength: 20
       }
     }
   });
@@ -160,7 +169,7 @@ $(document).ready(function() {
         return false;
       }
 
-      $('#welcome').html('Hello, ' + $('#firstname').val());
+      $('#welcome').html('Hi '+ $('#firstname').val() + ', ');
     },
     'onNext': function(tab, navigation, index) {
       var $valid = $("#commentForm").valid();
@@ -168,7 +177,7 @@ $(document).ready(function() {
         $validator.focusInvalid();
         return false;
       }
-      $('#welcome').html('Hello, ' + $('#firstname').val());
+      $('#welcome').html('Hi '+ $('#firstname').val() + ', ');
     }
 
   });

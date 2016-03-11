@@ -44,16 +44,18 @@ else {
   $topic = htmlspecialchars($_POST['topic']);
   $message = htmlspecialchars($_POST['message']);
 
-  $copy = 'bdumontet@telecomdesign.fr';
-  $blind_copy= 'boris.dumontet@gmail.com';
+  $copy = 'michael.uyttersprot@avnet.eu';
+  $blind_copy1= 'bdumontet@telecomdesign.fr';
+  $blind_copy2= 'michael.uyttersprot@avnet.eu';
 
   // Create the email and send the message
   $to = $routing ; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-  $email_subject = "AVNET Nouveau contact:  $name";
+  $email_subject = "[TD next camera modules] $firstname $name from $company";
   $email_body = '
   <html>
   <body>
-  <p>Vous venez de recevoir un message via le site Caméra TD next.</p>
+  <p>You have just received an email from the TD next camera modules website. Please handle this customer request.</p>
+  <span><strong>Local office contact email</strong></span>: '.$routing.'<br>
   <span><strong>Firstname</strong></span>: '.$firstname.'<br>
   <span><strong>Name</strong></span>: '.$name.'<br>
   <span><strong>Email</strong></span>: '.$email.'<br>
@@ -71,8 +73,7 @@ else {
   $headers .= "Content-Transfer-Encoding: 8bit" . "\r\n";
   $headers .= "From: $email" . "\r\n";
   $headers .= "Reply-To: $email" . "\r\n";
-  $headers .= 'Cc: '.$copy . "\r\n";
-  $headers .= 'Bcc: '.$blind_copy . "\r\n";
+  $headers .= 'Bcc: '.$blind_copy1 . ',' . $blind_copy2 . "\r\n";
 
   mail($to,$email_subject,$email_body,$headers);
   $result = 'ok';

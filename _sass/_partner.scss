@@ -1,0 +1,63 @@
+.partner-header {
+  background-position:center bottom;
+  .partner-logo {
+    padding:18px 12px;
+    border-radius:25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    background-color:#ffffff;
+    .img-partner-logo{
+      max-width:188px;
+      width:100%;
+    }
+  }
+}
+
+.partner-content {
+  .partner-name {
+    margin:0.694em 0 0 0;
+    @include font-size(72px);
+    text-transform:uppercase;
+  }
+  .partner-description {
+    margin:2.083em 0 2.083em 0;
+    @include font-size(24px);
+    text-align:justify;
+  }
+}
+
+.partner-social {
+  padding:0.625em 0 0.625em 0;
+  a {color:#ffffff;}
+  .partner-networks {
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .partner-website {
+    display:inline-block;
+    vertical-align:middle;
+    padding: 0.227em 0.682em;
+    margin-left: 1.136em;
+
+    @include font-size(22px);
+    border:0.091em solid #ffffff;
+    border-radius:2.273em;
+    -moz-border-radius: 2.273em;
+    -webkit-border-radius: 2.273em;
+    font-weight:500;
+  }
+}
+
+
+@media (min-width:768px) {
+  .partner-header {
+    margin-top:-5.313em;
+    padding-top:16%;
+    .partner-logo {
+      margin-bottom:-44px;
+    }
+  }
+  .partner-social {
+    margin-top:1.250em;
+  }
+}

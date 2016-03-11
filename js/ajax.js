@@ -49,7 +49,7 @@ $(document).ready(function(){
           $('#success > .alert-tdnext-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
           .append("</button>");
           $('#success > .alert-tdnext-success')
-          .append("Your message has been sent.");
+          .append("Your request has been sent! Your local office contact will get in touch with you as soon as possible.");
           $('#success > .alert-tdnext-success')
           .append('</div>');
 
