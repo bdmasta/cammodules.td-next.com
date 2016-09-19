@@ -1,0 +1,7 @@
+AuthUserFile /srv/data/web/vhosts/cammodules.td-next.com/htdocs/restricted-evnxp/.htpasswd
+AuthName "Restricted area. Get identified with your ID and password"
+AuthType Basic
+
+<limit GET POST>
+require valid-user
+</limit>
