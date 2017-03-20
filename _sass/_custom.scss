@@ -275,7 +275,7 @@
 
 #td7740, #tdm114 {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-td7740.jpg'); background-position:center center;}
 #td5640 {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-td5640.jpg'); background-position:center center;}
-
+#tdaip01 {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-tdaip01.jpg'); background-position:center center;}
 .technical-features {
   color:#ffffff;
   .technical-features-col{
@@ -292,8 +292,14 @@
         font-weight:200;
       }
     }
+    .technical-features-description-detail{
+      margin-left:2.500em;
+      margin-top:0.313em;
+    }
   }
 }
+
+
 
 .evb-owner {
   padding:0;
