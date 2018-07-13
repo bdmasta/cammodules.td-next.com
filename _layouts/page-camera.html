@@ -12,13 +12,13 @@ layout: default
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<div class="col-md-6 text-center">
-					<a target=_blank href="{% if page.id %}{{site.url}}/restricted-{{page.id}}-nda/{% endif %}" type="button" class="btn btn-bg-white btn-xxl btn-cam-download light btn-block">
+					<a target=_blank href="{% if page.id %}/restricted-{{page.id}}-nda/{% endif %}" type="button" class="btn btn-bg-white btn-xxl btn-cam-download light btn-block">
 						<i class="fa fa-test"></i> Get <span class="normal primary-color text-uppercase">data</span> sheet
 					</a>
 					<p class="text-muted text-white">Available after signing an NDA, please contact sales.</p>
 				</div>
 				<div class="col-md-6 text-center">
-					<a target=_blank href="{% if page.id %}{{site.url}}/restricted-{{page.id}}-evk/{% endif %}" type="button" class="btn btn-bg-white btn-xxl btn-cam-download light btn-block"><i class="fa fa-test"></i> Get <span class="normal primary-color text-uppercase">evk</span> tools</a>
+					<a target=_blank href="{% if page.id %}/restricted-{{page.id}}-evk/{% endif %}" type="button" class="btn btn-bg-white btn-xxl btn-cam-download light btn-block"><i class="fa fa-test"></i> Get <span class="normal primary-color text-uppercase">evk</span> tools</a>
 					<p class="text-muted text-white">Available after signing an NDA and purchasing an EVK (Evaluation Kit), please contact sales.</p>
 				</div>
 			</div>
